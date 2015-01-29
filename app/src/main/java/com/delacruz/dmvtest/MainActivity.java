@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
         TextView tv = new TextView(this);//apartir de aca es el texto
         tv.setText("teste");
         setContentView(tv);
-        //hasta aca
+        //hasta acaghgfgf
     }
 
 
