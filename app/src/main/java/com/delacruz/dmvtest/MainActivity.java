@@ -14,10 +14,13 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tv = new TextView(this);//apartir de aca es el texto
+        TextView tv = new TextView(this);//esta sirve como ejemplo para aparecer un texto
+        //tv es una variable textview
         tv.setText("teste");
         setContentView(tv);
-        //hasta acaghgfgf
+        findViewById(R.id.textView1);
+
+
     }
 
 
