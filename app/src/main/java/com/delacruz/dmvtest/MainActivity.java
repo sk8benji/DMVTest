@@ -1,5 +1,6 @@
 package com.delacruz.dmvtest;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,13 +22,16 @@ public class MainActivity extends ActionBarActivity {
         //tv.setText("teste");
         //setContentView(tv);
        // findViewById(R.id.textView1);
-        Button face_btn=(Button)findViewById(R.id.facebook_btn); // creo una variable button llamada face_btn relacionada al layout
+        final Button face_btn=(Button)findViewById(R.id.facebook_btn); // creo una variable button llamada face_btn relacionada al layout
         Button login_btn=(Button)findViewById(R.id.online_btn);
         Button guest_btn=(Button)findViewById(R.id.guest_btn);
 
         face_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent openPage1 = new Intent(MainActivity.this,Page1.class);
+                startActivity(openPage1);
 
             }
         });
@@ -44,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
 
             }
-            
+
 
         });
 
